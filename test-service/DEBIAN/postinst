@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+systemctl daemon-reload
+# Enable the systemd service
+systemctl enable test.service
+systemctl start test.service

@@ -1,0 +1,10 @@
+[Unit]
+Description=My Test Script
+
+[Service]
+Environment=SERVICE_NAME=TestRomanG
+ExecStart=/usr/sbin/test-systemd.sh /var/log/test-systemd.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
